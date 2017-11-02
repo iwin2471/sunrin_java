@@ -1,0 +1,15 @@
+import java.awt.Button;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+
+public class Mylistener implements ActionListener{
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		JButton button = (JButton) e.getSource();
+		// TODO Auto-generated method stub
+		System.out.println(e.getActionCommand());
+	}
+	
+}

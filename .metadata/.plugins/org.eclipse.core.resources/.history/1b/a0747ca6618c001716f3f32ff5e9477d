@@ -1,0 +1,9 @@
+
+public class Excecption {
+	public static void method(){
+		int n = Integer.parseInt("number");
+	}
+	public static void main(String[] args) {
+		
+	}
+}

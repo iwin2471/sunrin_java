@@ -1,0 +1,28 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.StringTokenizer;
+
+public class exam1 {
+	static int sum(String s1, String s2){
+		int tmp = 0;
+		tmp += Integer.parseInt(s1);
+		tmp += Integer.parseInt(s2);
+		return tmp;
+	}
+	
+	public static void main(String[] args) throws Exception{
+		BufferedReader br = new BufferedReader(new FileReader("data.txt"));
+		String input;
+		System.out.println("성명    주소    수학    영어   합계    평균");
+		while (true) {
+			input = br.readLine();
+			if(input == null)
+				break;
+			String arr[] = input.split("\\s");
+			int sum = sum(arr[2], arr[3]);
+			String result = arr[0]+"    "+arr[1]+"   "+arr[2]+"    "+arr[3]+"    "+sum+"    "+sum%2.0+"\n";
+			System.out.print(result);
+		}
+	}
+
+}

@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class StringSpeedcheck {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print(">>");
+		String line = sc.nextLine();
+		
+		while (true) {
+			System.out.print("명령:");
+			String sub = sc.nextLine();
+			if(sub.trim() == "그만"){
+				System.out.println("종료합니다");
+				break;
+			}
+				
+			String subArr[] = sub.split(" ");
+			if(subArr.length < 2)
+				System.out.println("잘못된 명령어입니다");
+			
+			if(subArr[1].substring(0, 1) == "!"){
+				subArr[1].replace("!", "");
+				line.replace(subArr[0], subArr[1]);
+				System.out.println(line);
+			}else System.out.println("잘못된 명령어입니다2");			
+		}
+	}
+}

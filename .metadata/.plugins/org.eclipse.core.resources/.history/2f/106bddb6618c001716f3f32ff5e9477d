@@ -1,0 +1,10 @@
+
+public class Excecption {
+	public static void method(){
+		int n = Integer.parseInt("number");
+		System.out.println(n);
+	}
+	public static void main(String[] args) {
+		
+	}
+}

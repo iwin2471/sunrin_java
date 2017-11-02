@@ -1,0 +1,21 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.StringTokenizer;
+
+int sum(String arr[]){
+	return 0;
+}
+public class exam1 {
+	public static void main(String[] args) throws Exception{
+		BufferedReader br = new BufferedReader(new FileReader("data.txt"));
+		String input;
+		while (true) {
+			input = br.readLine();
+			if(input == null)
+				break;
+			String arr[] = input.split("\\s");
+			System.out.println(arr[0]);
+		}
+	}
+
+}

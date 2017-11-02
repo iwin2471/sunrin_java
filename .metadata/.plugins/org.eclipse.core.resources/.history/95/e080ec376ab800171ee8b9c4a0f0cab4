@@ -1,0 +1,5 @@
+import org.w3c.dom.events.MouseEvent;
+
+public class MyMouseListener implements MouseEvent{
+
+}

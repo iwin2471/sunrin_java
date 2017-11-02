@@ -1,0 +1,10 @@
+import java.io.FileReader;
+
+class myFileter extends FileReader{	
+}
+
+public class CharExam01 {
+	public static void main(String[] args) {
+		
+	}
+}

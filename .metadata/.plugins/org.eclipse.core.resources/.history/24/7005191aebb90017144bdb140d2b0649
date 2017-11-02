@@ -1,0 +1,20 @@
+import java.awt.Container;
+import java.util.ArrayList;
+
+import javax.swing.JFrame;
+
+public class Exam7 {
+	public static void main(String[] args) {
+		JFrame frame = new JFrame("JButton Test");
+        
+		Container container = new Container();
+        frame.getContentPane().add(container);
+    
+ 
+        ArrayList<Character> types = new ArrayList<Character>();
+        types.add('7'); types.add('8'); types.add('9');
+        types.add('4'); types.add('5'); types.add('6');
+        types.add('1'); types.add('2'); types.add('3');
+        types.add('0'); types.add('.'); types.add('C');
+	}
+}

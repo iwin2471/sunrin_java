@@ -1,0 +1,15 @@
+import java.io.IOException;
+
+public class exam1 {
+	public static void main(String[] args) {
+		int bt = 0;
+		
+		try {
+			bt = System.in.read();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println(bt);
+	}
+}

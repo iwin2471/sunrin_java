@@ -1,0 +1,37 @@
+import java.awt.GridLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+class GridLay extends JFrame{
+ 
+    
+    public GridLay() {
+        setTitle("GridLayout Test");
+        this.init();//화면을 구성하는 메소드
+        this.start();//이벤트,동작처리하는 메소드
+        this.setSize(500,200);
+        //화면의 가로 세로 크기
+        setVisible(true);
+    }
+    public void init(){
+        setLayout(new GridLayout(4, 3));
+        add(new JButton("버튼1"));
+        add(new JButton("버튼2"));
+        add(new JButton("버튼3"));
+        add(new JButton("버튼4"));
+        add(new JButton("버튼5"));
+ 
+        
+        
+    }
+    public void start(){
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+}
+
+public class Exam7 {
+    public static void main(String[] args) {
+        new GridLay();
+    }
+}

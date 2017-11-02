@@ -1,0 +1,9 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.nio.Buffer;
+
+public class exam4 {
+	public static void main(String[] args) {
+		BufferedReader = new BufferedReader(new InputStreamReader(System.in))
+	}
+}

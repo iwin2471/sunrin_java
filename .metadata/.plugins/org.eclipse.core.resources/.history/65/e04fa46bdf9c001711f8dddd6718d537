@@ -1,0 +1,13 @@
+import java.io.File;
+import java.io.FileWriter;
+import java.io.PrintWriter;
+
+public class fa {
+	public static void main(String[] args) throws Exception{
+		File file = new File("a.txt");
+		FileWriter fw = new FileWriter(file);
+		PrintWriter pw = new PrintWriter(fw);
+		pw.println("%d + %d = %d", 1, 2, (1+2));
+		
+	}
+}

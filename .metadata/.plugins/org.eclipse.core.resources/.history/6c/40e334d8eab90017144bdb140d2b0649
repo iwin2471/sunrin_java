@@ -1,0 +1,40 @@
+
+public class Exam7 {
+	public static void main(String[] args) {
+		frame = new JFrame("JButton Test");
+        
+        container = new Container();
+        frame.getContentPane().add(container);
+        
+        this.mLabel = new JLabel();
+        this.mLabel.setText("M");
+        this.mLabel.setBounds(5, 12, 20, 20);
+        this.mLabel.setVisible(false);
+        container.add(this.mLabel);
+        
+        // result text field
+        txt = new JTextField();
+        txt.setBorder(null);
+        txt.setText("0");
+        txt.setHorizontalAlignment(JTextField.RIGHT);
+        txt.setBounds(25, 0, 215, 40);
+        txt.setFocusable(false);
+        txt.setEditable(false);
+        container.add(txt);
+        
+        // functions for memory
+        int _scaleNum = 60;
+        
+        createButton("MC", 0, 40, _scaleNum, 40);
+        createButton("MR", _scaleNum + 6, 40, _scaleNum, 40);
+        createButton("M+", _scaleNum * 2 + 12, 40, _scaleNum, 40);
+        createButton("M-", _scaleNum * 3 + 18, 40, _scaleNum, 40);
+        
+        // number
+        ArrayList<Character> types = new ArrayList<Character>();
+        types.add('7'); types.add('8'); types.add('9');
+        types.add('4'); types.add('5'); types.add('6');
+        types.add('1'); types.add('2'); types.add('3');
+        types.add('0'); types.add('.'); types.add('C');
+	}
+}
